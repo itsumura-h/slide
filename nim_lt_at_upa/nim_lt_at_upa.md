@@ -130,7 +130,7 @@ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 ```
 
 WindowsでもGithubのリリースページからZipをダウンロードし
-解答して中の`runme.bat`を実行するだけ
+解凍して中の`runme.bat`を実行するだけ
 
 もちろんDockerイメージもDockerhubにあります
 
@@ -175,7 +175,7 @@ https://nimble.directory
 ![](./Screenshot%20from%202021-07-02%2015-15-35.jpg)
 
 ---
-## Nimtendo Switch
+## Nintendo Switch
 ![](./Screenshot%20from%202021-07-02%2015-16-23.jpg)
 
 ---
