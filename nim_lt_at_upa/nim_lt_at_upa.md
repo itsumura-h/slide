@@ -21,6 +21,7 @@ theme: default
 1. どこでも動く
 1. C言語と連携が簡単
 1. 何でもできる
+1. 私がNimで作ったライブラリ
 
 
 ---
@@ -115,6 +116,45 @@ echo getName(taro)
 ライブラリ内の独自の型に対してメソッドを後から追加できる
 
 ---
+## JSONパースが楽
+```nim
+import json, os
+
+# ファイルを開く
+let file = readFile("./file.json")
+# 文字列をJsonNode型に変換
+let node = file.parseJson
+echo node
+>> {"key1":{"id":20,"name":"takahashi"},"key2":["val1","val2"]}
+
+echo node["key1"]["id"].getInt
+>> 20
+
+echo node["key1"]["name"].getStr
+>> "takahashi"
+
+echo node["key2"]
+>> ["val1","val2"]
+```
+---
+
+```nim
+# key1に要素を追加
+node["key1"]["email"] = %"takahashi@gmail.com"
+echo node["key1"]["email"].getStr
+>> "takahashi@gmail.com"
+
+# key2に要素を追加
+node["key2"].add(%"val3")
+echo node["key2"]
+>> ["val1","val2","val3"]
+```
+
+- Goのように構造体を用意する必要がない
+- 動的型付け言語の連想配列ようにJSONを扱うことができる
+
+---
+
 # 整った環境
 
 ---
@@ -253,6 +293,25 @@ https://github.com/fox0430/nicoru
 ## OS
 https://twitter.com/uchan_nos/status/1359014828090683393
 ![](./Screenshot%20from%202021-07-02%2016-05-01.jpg)
+
+---
+# 私がNimで作ったライブラリ
+
+---
+## Basolato
+LaravelライクなフルスタックWebフレームワーク
+![bg right 100%](./Screenshot%20from%202021-07-02%2017-48-34.jpg)
+
+---
+## allographer
+Laravelライクなクエリビルダ
+![bg right 100%](./Screenshot%20from%202021-07-02%2017-50-43.jpg)
+
+---
+## interface-implements
+Nimで`インターフェースの実装`を表現できるようになるライブラリ
+
+![bg right 100%](./Screenshot%20from%202021-07-02%2017-51-51.jpg)
 
 ---
 # 最後に
