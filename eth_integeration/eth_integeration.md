@@ -180,7 +180,6 @@ theme: default
 ---
 
 ## IC Light House
-- ICP上でのDEXを運営するプロジェクト
 - 板取引を行えるICDex
 - エクスプローラーであるICHouse
 - ThirdWebのようにノーコードでトークン発行ができるicTokens
