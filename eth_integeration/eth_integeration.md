@@ -199,7 +199,7 @@ theme: default
 
 ---
 
-![height:700](./image/iclighthouse-bridge.jpg)
+![width:1200](./image/iclighthouse-bridge.jpg)
 
 ---
 
