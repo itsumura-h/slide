@@ -149,7 +149,7 @@ theme: default
 
 ---
 
-![](./image/icp-subnet.png)
+![width:1200](./image/icp-subnet.png)
 
 ---
 
@@ -191,6 +191,10 @@ theme: default
 ---
 
 ![](./image/icExplorer.jpg)
+
+---
+
+![width:1200](./image/icTokens.png)
 
 ---
 ## icETHの進捗
